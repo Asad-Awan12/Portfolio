@@ -1,0 +1,198 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+.btn-dark {
+  padding: 12px 24px;
+
+  color: white;
+  cursor: pointer;
+  border: none;
+
+  background: linear-gradient(
+    127deg,
+    #0e1c29 -68%,
+    #323d68 100%
+  );
+
+  border-radius: 10px;
+
+  box-shadow: rgb(184, 193, 230) 0px 1px 2px 0px inset,
+    rgba(46, 64, 128, 0.35) 0px 0.706592px 0.706592px -0.583333px,
+    rgba(46, 64, 128, 0.34) 0px 1.80656px 1.80656px -1.16667px,
+    rgba(46, 64, 128, 0.33) 0px 3.62176px 3.62176px -1.75px,
+    rgba(46, 64, 128, 0.3) 0px 6.8656px 6.8656px -2.33333px,
+    rgba(46, 64, 128, 0.26) 0px 13.6468px 13.6468px -2.91667px,
+    rgba(46, 64, 128, 0.15) 0px 30px 30px -3.5px;
+
+  opacity: 1;
+}
+
+/* Light button */
+.btn-light {
+  padding: 12px 24px;
+
+  color: #1a1a1a;
+  cursor: pointer;
+  border: none;
+
+  background: linear-gradient(
+    126deg,
+    rgba(94, 120, 143, 0.5) -44%,
+    rgba(240, 248, 255, 0.9) 55%
+  );
+
+  border-radius: 10px;
+
+  box-shadow: inset 0px 2px 4px 0px rgb(255, 255, 255),
+    0px 0.7409732186px 0.7409732186px -0.7px rgba(121, 152, 189, 0.34),
+    0px 2.0178668455px 2.0178668455px -1.4px rgba(121, 152, 189, 0.33),
+    0px 4.4305052616px 4.4305052616px -2.1px rgba(121, 152, 189, 0.31),
+    0px 9.8347100841px 9.8347100841px -2.8px rgba(121, 152, 189, 0.27),
+    0px 25px 25px -3.5px rgba(121, 152, 189, 0.15);
+
+  opacity: 1;
+}
+.italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* .italic {
+  font-family: "Instrument Serif", serif;
+} */
+
+.basefont {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.dancefont {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.mySwiper {
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.nav {
+  backdrop-filter: blur(8px);
+  background: linear-gradient(
+    180deg,
+    rgba(14, 28, 41, 0.5) -53%,
+    rgb(14, 28, 41) 100%
+  );
+  border-radius: 100px;
+  padding: 5px 15px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+
+  box-shadow: rgba(0, 0, 0, 0.28) 0px 0.71px 0.71px -0.58px,
+    rgba(0, 0, 0, 0.27) 0px 1.81px 1.81px -1.17px,
+    rgba(0, 0, 0, 0.26) 0px 3.62px 3.62px -1.75px,
+    rgba(0, 0, 0, 0.24) 0px 6.87px 6.87px -2.33px,
+    rgba(0, 0, 0, 0.21) 0px 13.65px 13.65px -2.92px,
+    rgba(0, 0, 0, 0.12) 0px 30px 30px -3.5px,
+    rgba(255, 255, 255, 0.15) 0px 0px 0px 2px inset;
+}
+
+.nav-item {
+  opacity: 0.7;
+  color: #fff;
+  text-decoration: none;
+  font-family: inherit;
+  transition: opacity 0.25s ease;
+  cursor: pointer;
+}
+
+
+.nav-item:hover {
+  opacity: 1;
+}
+
+.nav-button {
+  border-radius: 100px;
+  padding: 10px 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(94, 120, 143, 0.5) 0%,
+    rgb(14, 28, 41) 229%
+  );
+  color: #fff;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.25s ease;
+}
+
+.nav-button:hover {
+  opacity: 0.8;
+}
+
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    left: 100%;
+  }
+}
+
+.women {
+  background-image: url("/assets/images/women.png");
+  background-size: cover;
+  background-position: center;
+}
+.men {
+  background-image: url("/assets/images/men.png");
+  background-size: cover;
+  background-position: top;
+}
+.person {
+  background-image: url("/assets/images/person.png");
+  background-size: cover;
+  background-position: top;
+}
+.oldwomen {
+  background-image: url("/assets/images/oldwomen.png");
+  background-size: cover;
+  background-position: top;
+}
+
+
+
+.backdrop-blur-extreme {
+  backdrop-filter: blur(200px) saturate(180%) brightness(50%);
+}
